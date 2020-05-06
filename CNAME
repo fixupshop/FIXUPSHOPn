@@ -1,4 +1,4 @@
-$ dig EXAMPLE.COM +noall +answer
+$ dig fixupshop.COM +noall +answer
 >  fixupshop.COM     3600    IN A     185.199.108.153
 > fixupshop.COM     3600    IN A     185.199.109.153
 > fixupshop.COM     3600    IN A     185.199.110.153
