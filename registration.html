@@ -1,0 +1,81 @@
+<html lang="ru">
+<head>
+<link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="/images/debt_703522.png">
+<link type="text/css" href="/stylesheets/style.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.6.1/uploadcare.full.min.js"></script>    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body>
+    <div>
+        <div class="wrapper">
+            <div class="navigation">
+               <img class="fff" src="image/logo.png" width=200"" height="50" alt="logo">
+               <ul class="nav">
+                  <li>
+                      <a href="home.html">Главная</a>
+                  </li>
+                  <li>
+                      <a class="tero" href="about.html">О нас</a>
+                  </li>
+                  <li>
+                   <a class="" href="registration.html">Зарегестрироватся</a>
+                   </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    
+</head>
+	<div class="signup-form">
+		<form action="/auth/register" id="register_form" method="post">
+			<h2>Register</h2>
+			<p class="hint-text">Create your account. It's free and only takes a minute.</p>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-xs-6"><input type="text" class="form-control" name="Имя" placeholder="Имя" required="required" maxlength="15"></div>
+					<div class="col-xs-6"><input type="text" class="form-control" name="Фамилия" placeholder="Фамилия" required="required" maxlength="15"></div>
+				</div>        	
+			</div>
+			<p id="loginerr" style="color:red;font-size:18px;"></p>
+			<div class="form-group">
+				<input type="text" class="form-control" name="login" id="login" pattern="^[A-Za-z0-9_]{4,15}$" title="username must contain only letters and numbers and be longer than 6 characters" placeholder="Login" required="required">
+			</div>
+			<div class="form-group">
+				<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" title="password must be min 4 characters long" name="password" pattern="^[A-Za-z0-9_]{4,16}$" id="pass1" placeholder="Password" required="required">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" pattern="^[A-Za-z0-9_]{4,16}$" title="password must be min 4 characters long" name="confirm_password" id="pass2" placeholder="Confirm Password" required="required">
+			</div> 
+			<p id="err" style="font-size:18px;"></p>
+			<div class="form-group">
+				<button type="submit"  class="btn btn-success btn-lg btn-block">Register Now</button>
+			</div>
+		</form>
+		<div class="text-center">Already have an account? <a href="log.html">Sign in</a></div>
+	</div>
+    <div class="footer">
+        <div class="wrapper">
+            <p>©2020 при создании влада и вани</p>
+        </div>
+    </div>
+<script src="/javascripts/register.js"></script>
+<style>
+    body {
+     background: #2c003e;
+    }
+   </style>
+</body>
+</html>
